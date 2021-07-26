@@ -99,3 +99,8 @@ getScimitars();
 ```
 Output: Recent updatesList of questsAchievement DiariesSkill trainingMoney makingCalculatorsTreasure TrailsNew player guide
 ```
+
+## Getting rid of whitespace
+```
+const item = $(element).text().replace(/\s\s+/g, '');
+```

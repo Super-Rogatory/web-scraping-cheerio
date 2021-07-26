@@ -11,7 +11,7 @@ async function getScimitars() {
         // console.log(siteOutput.text());
         // console.log(siteOutput.find('p').text());
         $('#mw-panel #p-Guides .body ul').each((index, element) => {
-            const item = $(element).text();
+            const item = $(element).text().replace(/\s\s+/g, '');
             console.log(item);
         })
     } catch (err) {
